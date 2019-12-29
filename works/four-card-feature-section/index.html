@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      width: 90%;
+      margin: 2em auto;
+    }
+
+    header p {
+      margin: 0;
+      text-align: center;
+      color: hsl(234, 12%, 34%);
+    }
+
+    .tagline {
+      font-size: 2rem;
+    }
+
+    .powered-by {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .description {
+      margin-top: 2em;
+      font-size: .7rem;
+      color: hsl(229, 6%, 66%);
+    }
+
+
+    /* Layout */
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      width: 75%;
+      margin: auto;
+      margin-top: 3em;
+    }
+
+    .card-column {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1em;
+    }
+
+    /* Card Styling */
+
+    .card {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 4px 16px hsl(229, 6%, 66%);
+      border-radius: 8px;
+      padding: 2em;
+      border-top: 8px solid;
+      margin: 1em 0;
+    }
+
+    .card-top-cyan-border {
+      border-top-color: hsl(180, 62%, 55%);
+    }
+
+    .card-top-red-border {
+      border-top-color: hsl(0, 78%, 62%);
+    }
+
+    .card-top-orange-border {
+      border-top-color: hsl(34, 97%, 64%);
+    }
+
+    .card-top-blue-border {
+      border-top-color: hsl(212, 86%, 64%);
+    }
+
+    .card-title {
+      margin: 0;
+      font-weight: bold;
+      color: hsl(234, 12%, 34%);
+    }
+
+    .card-subtitle {
+      margin-top: 1em;
+      color: hsl(229, 6%, 66%);
+      font-size: .7rem;
+    }
+
+    .card-icon {
+      width: 48px;
+      align-self: flex-end;
+    }
+
+    @media (max-width: 500px) {
+      .card-container {
+        flex-direction: column;
+      }
+    }
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <p class="tagline">Reliable, efficient delivery</p>
+    <p class="powered-by">Powered by Technology</p>
+    <p class="description">Our Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful</p>
+  </header>
+
+  <div class="card-container">
+    <div class="card-column">
+      <div class="card card-top-cyan-border">
+        <p class="card-title">Supervisor</p>
+        <p class="card-subtitle">Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" alt="supervisor" class="card-icon" />
+      </div>
+    </div>
+
+    <div class="card-column">
+      <div class="card card-top-red-border">
+        <p class="card-title">Team Builder</p>
+        <p class="card-subtitle">Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt="team-builder" class="card-icon" />
+      </div>
+      <div class="card card-top-orange-border">
+        <p class="card-title">Karma</p>
+        <p class="card-subtitle">Regularly evaluates our talent to ensure quality</p>
+        <img src="./images/icon-karma.svg" alt="karma" class="card-icon" />
+      </div>
+    </div>
+
+    <div class="card-column">
+      <div class="card card-top-blue-border">
+        <p class="card-title">Calculator</p>
+        <p class="card-subtitle">Uses data from past projects to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" alt="calculator" class="card-icon" />
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Tek Loon</a>.
+    </p>
+  </footer>
+</body>
+
+</html>

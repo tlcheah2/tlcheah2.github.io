@@ -1,0 +1,117 @@
+/* Boilerplat code */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+body, h1, .card-reading-duration {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h1, .card-footer {
+    font-family: 'Blinker', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff;
+}
+
+button {
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* Layout */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background: #111D4A;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card-cover-photo {
+    object-fit: cover;
+    flex-basis: 200px;
+    /* flex-basis bug on img in chrome, have to explicitly set min width and height */
+    min-width: 0;
+    min-height: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+}
+
+.card-title {
+    color: #05CBE9;
+}
+
+.card-description {
+    line-height: 2;
+}
+
+.card-footer {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-reading-duration {
+    line-height: 1.2;
+    opacity: 0.6;
+}
+
+.card-reading-time {
+    font-size: 1.375em;
+    font-weight: 900;
+}
+
+.card-btn-read-more {
+    color: #111D4A;
+    background: #05CBE9;
+    font-family: inherit;
+    font-weight: 900;
+    padding: .5em 2em;
+}
+
+.card-btn-read-more:hover, .card-btn-read-more:focus {
+    background: darkorange;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card-description {
+        font-size: 1.125rem;
+        max-width: 500px;
+    }
+
+    .card-footer {
+        margin-top: auto;
+    }
+}
+
+

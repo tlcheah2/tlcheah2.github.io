@@ -1,0 +1,79 @@
+/* Boilerplate code */
+* {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.work-content {
+    padding: .5em;
+}
+
+.description {
+    text-align: center;
+}
+
+/* Layout */
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5em;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.work-item {
+    border: 1px solid gray;
+
+}
+
+.work-cover-photo {
+    object-fit: cover;
+    width: 100%;
+}
+
+.work-btn-visit-website {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin-top: .5em;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: .5em 1em;
+    background: orangered;
+    color: white;
+}
+
+.work-btn-visit-website:hover, .work-btn-visit-website:focus {
+    cursor: pointer;
+    background: darkslateblue;
+}
+
+
+@media (min-width: 600px) {
+    .work-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .work-cover-photo {
+        width: 100%;
+    }
+}

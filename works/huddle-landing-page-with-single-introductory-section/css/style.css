@@ -112,6 +112,7 @@ i {
 
     .container {
         padding: 3em;
+        background-image: url('../images/bg-desktop.svg');
     }
 
     .logo {

@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* Layout */
+h1, p {
+    margin: 0;
+}
+
+.resume-container {
+    margin: 0 auto;
+    /* padding: 4em 0; */
+    max-width: 600px;
+}
+
+.title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header i {
+    font-size: 3.5rem;
+}
+
+.email, .phone {
+    margin: .2em 0;
+    color: white;
+    background: rgb(61, 49, 49);
+    padding: .5em .75em;
+    font-size: .9rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.section-numbering {
+    width: 15%;
+}
+
+.numbering {
+    width: min-content;
+    font-weight: 700;
+    padding-bottom: .5em;
+    border-bottom: 2.5px solid #000;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.numbering-big {
+    font-size: 1.8rem;
+    padding-bottom: 0;
+
+}
+
+.section-content {
+    width: 85%;
+}
+
+.section-content .content-container {
+    padding: 1.5em 0;
+}
+
+.introduction .title {
+    font-size: 2.5rem;
+}
+
+.introduction .description {
+    font-weight: 700;
+    text-align: justify;
+}
+
+/* Skillset Section */
+.skillset-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+}
+
+.skillset-item-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.skillset-item-container .logo {
+    width: 40px;
+    height: 40px;
+}
+
+.skillset-item-container .name {
+    margin: 0 0 0 1em;
+    /* font-size: 1.1rem; */
+}
+
+/* Expertise section */
+.content-expertise {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+}
+
+/* Education section */
+.education-item {
+    padding-bottom: 1em;
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.institution {
+    color: rgb(142, 142, 142);
+}
+
+/* Employment Section */
+.employment-item {
+    padding-bottom: 1em;
+}
+
+.job-title-year-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsibilities {
+    margin-top: 1em;
+    color: rgb(142, 142, 142)
+}
+
+/* Projects Section */
+.project-item {
+    padding-bottom: 1em;
+}
+
+.project-year-container {
+    display: flex;
+}
+
+.project-year {
+    color: rgb(142, 142, 142);
+    min-width: 10%;
+}
+
+.project-description {
+    color: rgb(142, 142, 142);
+}
+
+.project-item {
+    margin-left: 2em;
+}
+
+.project-name {
+    font-size: 1.2rem;
+}
+
+.project-item:nth-child(n+2) {
+    margin-top: 1em;
+}
+
+.attribution {
+    padding-bottom: 1em;
+}

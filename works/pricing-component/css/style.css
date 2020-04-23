@@ -1,0 +1,143 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(231, 234, 239);
+    font-family: 'Muli', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 2.625rem;
+    flex-grow: 2;
+}
+
+p {
+    margin: 0;
+}
+
+.pricing-component-container {
+    max-width: 80%;
+    margin: auto;
+    padding: 2em;
+}
+
+.pricing-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription-type {
+    background-color: #BABCBC;
+    border-radius: 24px;
+    height: fit-content;
+}
+
+.btn-monthly, .btn-yearly {
+    padding: .3em 1em;
+    background-color: transparent;
+    border: none;
+    font-size: .85rem;
+    font-weight: 700;
+    margin: 4px;
+    outline: none;
+}
+
+.btn-monthly:hover, .btn-yearly:hover {
+    cursor: pointer;
+}
+
+.btn-subscription-type-selected {
+    background-color: white;
+    border-radius: 24px;
+}
+
+.section-plan {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 500px));
+    grid-gap: 2em;
+    margin-top: 3em;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2em;
+}
+
+.plan-name {
+    margin: 0 0 1em 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.plan-price {
+    margin: 0 0 .3em 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.bill-type {
+    margin-bottom: 1.5em;
+    font-size: 1.05rem;
+}
+
+.plan-description {
+    margin-bottom: 1.5em;
+}
+
+.btn-get-started {
+    padding: .75em 2em;
+    justify-self: flex-end;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: auto;
+    background-color: transparent;
+    border: 2px solid black;
+    transition: all 0.3s;
+}
+
+.btn-get-started:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.btn-get-started:focus {
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    transform: scale(0.92);
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .pricing-header {
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .subscription-type {
+        margin-top: 1em;
+    }
+
+    .section-plan {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+

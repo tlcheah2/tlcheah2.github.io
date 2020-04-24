@@ -1,0 +1,83 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #F2F3FA;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song-card {
+    box-sizing: border-box;
+    position: relative;
+    padding: 1.5em;
+    max-width: 700px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 12px 8px #DCE0F8;
+}
+
+.song-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 5px;
+    background-color: #7E9CFF;
+}
+
+.artist-thumbnail {
+    width: 150px;
+    height: 150px;
+    background: #EC6552;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.song-info {
+    padding: 1em 1.5em;
+}
+
+.artist, .song-name {
+    margin: 0;
+}
+
+.artist {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.btn-play-pause {
+    margin: 1.5em 1em 1.5em auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 8px 8px #F2F3FA;
+    outline: none;
+}
+
+.btn-play-pause:hover {
+    cursor: pointer;
+    background-color: #7E9CFF;
+}
+
+.ic-play-pause {
+    margin: 0 auto;
+    font-size: .95rem;
+    color: #7E9CFF;
+}
+
+.ic-white {
+    color: white;
+}
+
+

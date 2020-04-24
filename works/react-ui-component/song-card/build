@@ -1,0 +1,19 @@
+
+
+const e = React.createElement;
+
+class SongCardComponent extends React.Component {
+    render() {
+        React.createElement(
+            'div',
+            null,
+            React.createElement(
+                'h1',
+                null,
+                'Hello World'
+            )
+        );
+    }
+}
+
+ReactDOM.render(SongCardComponent, document.getElementById('song-card-component'));

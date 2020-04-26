@@ -15,7 +15,7 @@ h1 {
 /* This container is optional - to position at center and the allow the transition move to left */
 .btn-email-container {
     position: absolute;
-    bottom: 43%;
+    bottom: 40%;
     right: 50%;
 }
 

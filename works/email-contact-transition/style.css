@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+/* This container is optional - to position at center and the allow the transition move to left */
+.btn-email-container {
+    position: absolute;
+    bottom: 43%;
+    right: 50%;
+}
+
+.btn-email {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #eeeeee;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    transition: width .7s ease-in-out;
+}
+
+.btn-email:hover {
+    cursor: pointer;
+    padding: 0 1em;
+    width: 294px;
+    padding: 0;
+    padding-left: 1em;
+}
+
+.ic-email {
+    margin: 0 auto;
+    color: black;
+    font-size: 1rem;
+}
+
+.email {
+    margin: 0 2em 0 1em;
+    font-size: 0.8rem;
+    color: black;
+    display: none;
+}
+
+.btn-copy-email {
+    background-color: transparent;
+    width: 80px;
+    height: 100%;
+    border: none;
+    border-radius: inherit;
+    border-left: 1px solid #eeeeee;
+    box-shadow: 0px 0px 4px 2px rgba(36,46,76,0.1);
+    padding: 0 2em;
+    outline: none;
+    font-size: .7rem;
+    font-weight: 700;
+    display: none;
+}
+
+.btn-copy-email:hover {
+    cursor: pointer;
+}
+
+.visible {
+    display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+}

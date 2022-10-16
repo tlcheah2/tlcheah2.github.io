@@ -1,3 +1,7 @@
+:root {
+  --main-description-color: rgb(50, 50, 50);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +11,6 @@ body {
     margin: 0;
     font-family: 'Source Serif Pro', serif;
     font-size: 1rem;
-    font-weight: 700;
     line-height: 1.5;
     letter-spacing: 1px;
 }
@@ -15,6 +18,10 @@ body {
 /* Layout */
 h1, p {
     margin: 0;
+}
+
+li {
+  line-height: 1.75
 }
 
 .resume-container {
@@ -91,7 +98,6 @@ section {
 }
 
 .introduction .description {
-    font-weight: 700;
     text-align: justify;
 }
 
@@ -123,6 +129,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5em;
+    font-weight: 600;
 }
 
 /* Education section */
@@ -136,7 +143,7 @@ section {
 }
 
 .institution {
-    color: rgb(142, 142, 142);
+    color: var(--main-description-color);
 }
 
 /* Employment Section */
@@ -147,11 +154,12 @@ section {
 .job-title-year-container {
     display: flex;
     justify-content: space-between;
+    font-weight: 700;
 }
 
 .responsibilities {
     margin-top: 1em;
-    color: rgb(142, 142, 142)
+    color: var(--main-description-color)
 }
 
 /* Projects Section */
@@ -164,12 +172,12 @@ section {
 }
 
 .project-year {
-    color: rgb(142, 142, 142);
+    color: var(--main-description-color);
     min-width: 10%;
 }
 
 .project-description {
-    color: rgb(142, 142, 142);
+    color: var(--main-description-color);
 }
 
 .project-item {

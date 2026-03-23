@@ -192,6 +192,58 @@ section {
     margin-top: 1em;
 }
 
+/* Past Projects - Print link (hidden on screen, shown in print/PDF) */
+.past-projects-link {
+    display: none;
+}
+
+/* Past Projects Toggle (shown on screen, hidden in print/PDF) */
+.past-projects-toggle {
+    margin-top: 1.5em;
+}
+
+.past-projects-toggle summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--main-description-color);
+    padding: 0.5em 0;
+    list-style: none;
+}
+
+.past-projects-toggle summary::-webkit-details-marker {
+    display: none;
+}
+
+.past-projects-toggle summary::before {
+    content: '+ ';
+}
+
+.past-projects-toggle[open] summary::before {
+    content: '- ';
+}
+
+@media print {
+    .past-projects-link {
+        display: block;
+        margin-top: 1.5em;
+        font-weight: 700;
+    }
+
+    .past-projects-link a {
+        color: var(--main-description-color);
+        text-decoration: underline;
+    }
+
+    .past-projects-toggle {
+        display: none;
+    }
+}
+
+.past-projects-toggle .project-year-container {
+    margin-top: 1em;
+}
+
 .attribution {
     padding-bottom: 1em;
 }

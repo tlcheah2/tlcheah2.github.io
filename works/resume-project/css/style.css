@@ -101,35 +101,29 @@ section {
     text-align: justify;
 }
 
-/* Skillset Section */
-.skillset-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5em;
-}
-
-.skillset-item-container {
-    display: flex;
-    align-items: center;
-}
-
-
-.skillset-item-container .logo {
-    width: 40px;
-    height: 40px;
-}
-
-.skillset-item-container .name {
-    margin: 0 0 0 1em;
-    /* font-size: 1.1rem; */
-}
-
 /* Expertise section */
-.content-expertise {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5em;
-    font-weight: 600;
+.content-expertise-grouped {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.expertise-group {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.expertise-group-label {
+    font-weight: 700;
+    min-width: 100px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.expertise-group-items {
+    color: var(--main-description-color);
 }
 
 /* Education section */
@@ -192,56 +186,11 @@ section {
     margin-top: 1em;
 }
 
-/* Past Projects - Print link (hidden on screen, shown in print/PDF) */
-.past-projects-link {
-    display: none;
-}
-
-/* Past Projects Toggle (shown on screen, hidden in print/PDF) */
-.past-projects-toggle {
-    margin-top: 1.5em;
-}
-
-.past-projects-toggle summary {
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1rem;
+/* Earlier roles */
+.earlier-roles {
     color: var(--main-description-color);
-    padding: 0.5em 0;
-    list-style: none;
-}
-
-.past-projects-toggle summary::-webkit-details-marker {
-    display: none;
-}
-
-.past-projects-toggle summary::before {
-    content: '+ ';
-}
-
-.past-projects-toggle[open] summary::before {
-    content: '- ';
-}
-
-@media print {
-    .past-projects-link {
-        display: block;
-        margin-top: 1.5em;
-        font-weight: 700;
-    }
-
-    .past-projects-link a {
-        color: var(--main-description-color);
-        text-decoration: underline;
-    }
-
-    .past-projects-toggle {
-        display: none;
-    }
-}
-
-.past-projects-toggle .project-year-container {
-    margin-top: 1em;
+    font-style: italic;
+    margin-top: 0.5em;
 }
 
 .attribution {

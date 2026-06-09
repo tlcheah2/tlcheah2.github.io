@@ -46,7 +46,7 @@ header i {
     font-size: 3.5rem;
 }
 
-.email, .phone {
+.email {
     margin: .2em 0;
     color: white;
     background: rgb(61, 49, 49);
@@ -186,6 +186,26 @@ section {
     margin-top: 1em;
 }
 
+/* Proudest Work section */
+.proudest-item {
+    padding-bottom: 1em;
+}
+
+.proudest-item:nth-child(n+2) {
+    margin-top: 1em;
+}
+
+.proudest-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+}
+
+.proudest-description {
+    color: var(--main-description-color);
+    line-height: 1.6;
+}
+
 /* Earlier roles */
 .earlier-roles {
     color: var(--main-description-color);
@@ -195,4 +215,542 @@ section {
 
 .attribution {
     padding-bottom: 1em;
+}
+
+/* ── Theme Toggle Button ── */
+.theme-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    padding: 0.6rem 1.2rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 3px 3px 0 #000;
+}
+
+.theme-toggle:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #000;
+}
+
+.theme-toggle:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 #000;
+}
+
+/* ════════════════════════════════════════
+   PLAYFUL THEME
+   ════════════════════════════════════════ */
+
+body.playful {
+    background: #fef9f3;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    letter-spacing: 0;
+    line-height: 1.65;
+}
+
+/* Import a playful font */
+body.playful {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Warm accent color */
+body.playful {
+    --accent: #e85d4e;
+    --accent-light: #ff8a7a;
+    --accent-bg: #fff0ed;
+    --card-bg: #ffffff;
+    --text-main: #2d2d2d;
+    --text-muted: #6b6b6b;
+    --border-radius: 16px;
+    --shadow: 0 4px 20px rgba(232, 93, 78, 0.08);
+    --shadow-hover: 0 8px 30px rgba(232, 93, 78, 0.14);
+}
+
+body.playful .resume-container {
+    max-width: 680px;
+    padding: 2rem 0;
+}
+
+/* Header */
+body.playful header {
+    background: var(--card-bg);
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
+
+body.playful header i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+}
+
+body.playful header:hover i {
+    transform: rotate(-8deg) scale(1.1);
+}
+
+body.playful .email {
+    background: var(--accent);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.playful .email:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(232, 93, 78, 0.3);
+}
+
+/* Sections as cards */
+body.playful section {
+    background: var(--card-bg);
+    padding: 1.75rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 1.25rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+body.playful section:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+body.playful .section-numbering {
+    width: auto;
+    margin-right: 1.25rem;
+}
+
+/* Circular numbered badges */
+body.playful .numbering {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: 50%;
+    border-bottom: none;
+    font-size: 0.95rem;
+    font-weight: 800;
+    padding-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+body.playful .numbering-big {
+    width: 56px;
+    height: 56px;
+    font-size: 1.3rem;
+    background: var(--accent);
+    color: #fff;
+}
+
+body.playful section:hover .numbering {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.1) rotate(-4deg);
+}
+
+body.playful section:hover .numbering-big {
+    transform: scale(1.08) rotate(4deg);
+}
+
+/* Typography */
+body.playful .title {
+    color: var(--text-main);
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+body.playful .introduction .title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--accent);
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+body.playful .introduction .description {
+    text-align: left;
+}
+
+body.playful li {
+    line-height: 1.7;
+}
+
+/* Expertise pills */
+body.playful .content-expertise-grouped {
+    gap: 1rem;
+}
+
+body.playful .expertise-group {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+body.playful .expertise-group-label {
+    min-width: auto;
+    background: var(--accent-bg);
+    color: var(--accent);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body.playful .expertise-group-items {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Employment */
+body.playful .job-title-year-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+body.playful .job-title {
+    color: var(--text-main);
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+body.playful .year {
+    background: var(--accent-bg);
+    color: var(--accent);
+    padding: 0.2rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+body.playful .responsibilities {
+    color: var(--text-muted);
+}
+
+body.playful .responsibilities li {
+    position: relative;
+    padding-left: 1.2rem;
+    list-style: none;
+}
+
+body.playful .responsibilities li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 800;
+}
+
+/* Proudest Work — highlighted cards */
+body.playful .proudest-work {
+    background: linear-gradient(135deg, var(--accent-bg) 0%, #fff 100%);
+    border: 2px solid var(--accent-light);
+}
+
+body.playful .proudest-name {
+    color: var(--accent);
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+body.playful .proudest-description {
+    color: var(--text-muted);
+}
+
+/* Projects */
+body.playful .project-year {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    background: var(--accent-bg);
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    height: fit-content;
+}
+
+body.playful .project-name {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+body.playful .project-description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Education */
+body.playful .certificate {
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+body.playful .institution {
+    color: var(--text-muted);
+}
+
+/* Links */
+body.playful .content-container a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+body.playful .content-container a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.25s ease;
+    border-radius: 1px;
+}
+
+body.playful .content-container a:hover {
+    color: var(--accent);
+}
+
+body.playful .content-container a:hover::after {
+    width: 100%;
+}
+
+/* Attribution */
+body.playful .attribution {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+body.playful .attribution a {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Toggle button in playful mode */
+body.playful .theme-toggle {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    box-shadow: 3px 3px 0 rgba(232, 93, 78, 0.3);
+}
+
+body.playful .theme-toggle:hover {
+    background: #d14a3c;
+    box-shadow: 5px 5px 0 rgba(232, 93, 78, 0.4);
+}
+
+/* Earlier roles */
+body.playful .earlier-roles {
+    color: var(--text-muted);
+    background: var(--accent-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    body.playful section {
+        padding: 1.25rem 1.5rem;
+    }
+
+    body.playful .introduction .title {
+        font-size: 2rem;
+    }
+
+    body.playful .theme-toggle {
+        top: 0.75rem;
+        right: 0.75rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    body.playful header {
+        padding: 1rem 1.25rem;
+    }
+
+    body.playful .section-numbering {
+        margin-right: 0.75rem;
+    }
+
+    body.playful .numbering {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    body.playful .numbering-big {
+        width: 48px;
+        height: 48px;
+        font-size: 1.1rem;
+    }
+}
+
+/* ════════════════════════════════════════
+   PRINT STYLES (must be at end for cascade priority)
+   ════════════════════════════════════════ */
+
+@media print {
+    .theme-toggle {
+        display: none !important;
+    }
+
+    /* Allow sections to break across pages naturally */
+    section {
+        page-break-inside: auto;
+        break-inside: auto;
+        /* Clone box decorations so padding/background render on both page fragments */
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
+
+    /* Keep individual items together */
+    .employment-item,
+    .project-item,
+    .proudest-item,
+    .education-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Keep job title with its responsibilities */
+    .job-title-year-container {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    /* Reduce overall font size for PDF */
+    body {
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+
+    body.playful {
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+
+    /* Tighter section spacing */
+    section {
+        margin-top: 1.25em;
+    }
+
+    body.playful section {
+        margin-top: 3rem;
+        padding: 1.5rem 1.5rem 1.25rem !important;
+    }
+
+    /* Smaller headings */
+    .title {
+        font-size: 1.25rem;
+    }
+
+    body.playful .title {
+        font-size: 1.15rem;
+    }
+
+    .introduction .title {
+        font-size: 2rem;
+    }
+
+    body.playful .introduction .title {
+        font-size: 2rem;
+    }
+
+    /* Smaller badges */
+    .numbering {
+        font-size: 1rem;
+    }
+
+    .numbering-big {
+        font-size: 1.4rem;
+    }
+
+    body.playful .numbering {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    body.playful .numbering-big {
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+    }
+
+    /* Tighter content padding */
+    .section-content .content-container {
+        padding: 1em 0;
+    }
+
+    /* Smaller project names */
+    .project-name {
+        font-size: 1.05rem;
+    }
+
+    body.playful .project-name {
+        font-size: 1rem;
+    }
+
+    /* Smaller proudest names */
+    .proudest-name {
+        font-size: 1rem;
+    }
+
+    body.playful .proudest-name {
+        font-size: 1.05rem;
+    }
+
+    /* Compact list spacing */
+    li {
+        line-height: 1.55;
+    }
+
+    body.playful li {
+        line-height: 1.55;
+    }
+
+    /* Smaller header */
+    header i {
+        font-size: 2.5rem;
+    }
+
+    body.playful header {
+        padding: 1rem 1.25rem;
+    }
+
+    /* Compact expertise */
+    body.playful .content-expertise-grouped {
+        gap: 0.6rem;
+    }
+
+    /* Ensure attribution stays at bottom */
+    .attribution {
+        margin-top: 1em;
+    }
 }

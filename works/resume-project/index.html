@@ -16,12 +16,12 @@
   </head>
 
   <body>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">✨ Playful</button>
     <div class="resume-container">
       <header>
         <i class="fas fa-code"></i>
         <div class="contact">
           <p class="email">tekloon.1991@gmail.com</p>
-          <p class="phone">+60 16 5160809</p>
         </div>
       </header>
 
@@ -30,13 +30,12 @@
           <p class="numbering numbering-big">01</p>
         </div>
         <div class="section-content">
-          <h1 class="title">Cheah Tek Loon</h1>
+          <h1 class="title">Tek Loon</h1>
           <ul class="content-container description">
-            <li><strong>10 years</strong> of experience building scalable backend systems and full-stack web applications</li>
-            <li><strong>4+ years fully remote</strong>, collaborating with distributed teams across South East Asia and Europe</li>
+            <li><strong>10 years</strong> building full-stack applications — <strong>4+ years fully remote</strong>, proven at delivering outcomes in remote work environments</li>
             <li>Specializes in <strong>system integration & solution design</strong>, with a growing focus on <strong>Generative AI integration and intelligent automation</strong></li>
-            <li>Technical blogger with <strong>85 published articles</strong> documenting learnings and best practices</li>
-            <li>Based in Kuala Lumpur, Malaysia (GMT+8, flexible overlap with EU/US timezones)</li>
+            <li>Technical blogger with <strong>110 published blog posts</strong> on software engineering experimentation and slow living</li>
+            <li>Based in South East Asia and could work with teams across different time zones</li>
           </ul>
         </div>
       </section>
@@ -96,20 +95,18 @@
             <div class="employment-item">
               <div class="job-title-year-container">
                 <p class="job-title">
-                  Senior Software Engineer / Tech Lead @ Xendit
+                  Senior Experiment Software Engineer / Tech Lead @ Xendit
                 </p>
                 <p class="year">Aug 2021 - Nov 2022</p>
               </div>
               <div class="responsibilities">
                 <li>
-                  Led a team of 4 engineers to build an internal data product serving cross-functional teams
+                  Led a team of 4 engineers to run rapid product experiments to evaluate new product ideas and features. 
                 </li>
                 <li>
-                  Redesigned data retrieval layer with async processing, reducing query time from seconds to milliseconds on large datasets
+                  Primarily focus on building browser automation technology such as Puppeteer to connect bank app with Xendit Platform.
                 </li>
-                <li>
-                  Worked fully remote with distributed teams across Southeast Asia, driving alignment through async documentation and code reviews
-                </li>
+    
               </div>
             </div>
             <div class="employment-item">
@@ -136,9 +133,32 @@
         </div>
       </section>
 
-      <section>
+      <section class="proudest-work">
         <div class="section-numbering">
           <p class="numbering">04</p>
+        </div>
+        <div class="section-content">
+          <p class="title">Proudest Work</p>
+          <div class="content-container">
+            <div class="proudest-item">
+              <p class="proudest-name">End-to-End Architecture — Revelir AI Customer Support Metric Assessment</p>
+              <p class="proudest-description">
+                Designed and built the complete evaluation pipeline architecture for assessing AI-generated customer support responses against quality metrics, enabling systematic performance tracking and improvement.
+              </p>
+            </div>
+            <div class="proudest-item">
+              <p class="proudest-name">AI Assessment Pipeline — Daily Customer Support Evaluation</p>
+              <p class="proudest-description">
+                Built a production-grade daily assessment pipeline using Cloudflare Workflows to automatically evaluate thousands of enterprise customer support tickets per day, delivering consistent quality insights at scale with minimal operational overhead.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-numbering">
+          <p class="numbering">05</p>
         </div>
         <div class="section-content">
           <p class="title">Key Projects</p>
@@ -149,32 +169,19 @@
                 <div class="project-item">
                   <p class="project-name">Revelir.AI</p>
                   <p class="project-description">
-                    Real-time AI evaluation & monitoring platform. Built with
-                    TypeScript/Express, PostgreSQL, Pinecone/Qdrant vector
-                    stores, OpenAI/Gemini, and Cloudflare Workers queues.
+                    Real-time AI evaluation & monitoring platform.
                   </p>
                 </div>
                 <div class="project-item">
                   <p class="project-name">Zendesk AI Copilot</p>
                   <p class="project-description">
-                    AI-powered customer support copilot with vector search,
-                    Google Gemini, Voyage AI embeddings, and Langfuse
-                    observability.
+                    AI-powered customer support copilot with vector search and observability.
                   </p>
                 </div>
                 <div class="project-item">
                   <p class="project-name">Invoice Pilot</p>
                   <p class="project-description">
-                    AI-powered invoice validation using Next.js 15, Mastra.ai
-                    framework, Google Gemini 2.0 Flash, and Convex backend.
-                  </p>
-                </div>
-                <div class="project-item">
-                  <p class="project-name">RefineSource</p>
-                  <p class="project-description">
-                    Lead generation and enrichment tool built with Cloudflare
-                    Workers, Anthropic Claude SDK, Google Gemini, and Convex
-                    backend with browser rendering.
+                    AI-powered invoice validation using Next.js 15 and Mastra.ai.
                   </p>
                 </div>
               </div>
@@ -185,7 +192,7 @@
 
       <section>
         <div class="section-numbering">
-          <p class="numbering">05</p>
+          <p class="numbering">06</p>
         </div>
         <div class="section-content">
           <p class="title">Education</p>
@@ -205,7 +212,7 @@
 
       <section>
         <div class="section-numbering">
-          <p class="numbering">06</p>
+          <p class="numbering">07</p>
         </div>
         <div class="section-content">
           <p class="title">Links</p>
@@ -221,7 +228,10 @@
               >
             </li>
             <li>
-              <a href="https://tekloon.medium.com" target="_blank">Blog</a>
+              <a href="https://tekloon.medium.com" target="_blank">Medium Blog</a>
+            </li>
+             <li>
+              <a href="https://tekloon.net" target="_blank">Personal Blog</a>
             </li>
           </div>
         </div>
@@ -234,5 +244,18 @@
         >
       </p>
     </div>
+    <script>
+      const toggleBtn = document.getElementById('theme-toggle');
+      const body = document.body;
+      const saved = localStorage.getItem('resume-theme');
+      if (saved === 'playful') body.classList.add('playful');
+      toggleBtn.textContent = body.classList.contains('playful') ? '🎨 Minimal' : '✨ Playful';
+      toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('playful');
+        const isPlayful = body.classList.contains('playful');
+        toggleBtn.textContent = isPlayful ? '🎨 Minimal' : '✨ Playful';
+        localStorage.setItem('resume-theme', isPlayful ? 'playful' : 'minimal');
+      });
+    </script>
   </body>
 </html>
